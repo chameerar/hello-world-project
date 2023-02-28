@@ -3,8 +3,10 @@
     <resource methods="GET">
         <inSequence>
             <payloadFactory media-type="json">
-                <format>{"Hello":"$SYSTEM:GREETING"}</format>
-                <args/>
+                <format>{"Hello": "$1"}</format>
+				<args>
+					<arg value="$SYSTEM:GREETING" />
+				</args>
             </payloadFactory>
             <respond/>
         </inSequence>
