@@ -6,11 +6,11 @@
   },
   "servers": [
     {
-      "url": "http://localhost:9090"
+      "url": "http://localhost:8290/HelloWorld"
     }
   ],
   "paths": {
-    "/HelloWorld": {
+    "/": {
       "get": {
         "summary": "Returns a Hello message.",
         "description": "Optional extended description in CommonMark or HTML.",
